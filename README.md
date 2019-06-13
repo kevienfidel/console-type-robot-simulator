@@ -19,7 +19,7 @@ you can execute a command PLACE with this format:
 example: 
 `PLACE 0,0,NORTH`
 
-other command than PLACE, just enter either, `MOVE`, `LEFT`, `REPORT` or `RIGHT`
+other command than `PLACE`, just enter either, `MOVE`, `LEFT`, `REPORT` or `RIGHT`
 
 if you want to clear or reset the report, just enter `CLEAR`
 
