@@ -24,6 +24,38 @@ other command than `PLACE`, just enter either, `MOVE`, `LEFT`, `REPORT` or `RIGH
 if you want to clear or reset the report, just enter `CLEAR`
 
 
+## You can use the test the application with the inputs listed below and verify the result with the output section
+
+Example Input and Output  
+
+**Input:**  
+`PLACE 0,0,NORTH`  
+`MOVE`  
+`REPORT`   
+ 
+**Output:**  
+`0,1,NORTH`   
+
+----------------  
+**Input:**   
+`PLACE 0,0,NORTH`   
+`LEFT`  
+`REPORT`  
+ 
+**Output:**   
+`0,0,WEST`  
+
+----------------  
+**Input:**   
+`PLACE 1,2,EAST`   
+`MOVE`  
+`MOVE`  
+`LEFT`  
+`MOVE`  
+`REPORT` 
+ 
+**Output:**  
+`3,3,NORTH`  
 
 ## Learn More
 
