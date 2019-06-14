@@ -62,3 +62,21 @@ export const determineDirectionAfterRight = ( facingDirection: string ) => {
   }
 }
 
+export const validateCommand = ( commandString: string ) => {
+  let isValid = false
+
+  const placeCommandRegExp = /PLACE [0-9][,][0-9][,](NORTH|SOUTH|EAST|WEST)/
+  const moveRegExp = /MOVE/
+  const leftRegExp = /LEFT/
+  const rightRegExp = /RIGHT/
+  const clearRegExp = /CLEAR/
+  const reportRegExp = /REPORT/
+
+  const regExpArray = [placeCommandRegExp, moveRegExp, leftRegExp, rightRegExp, clearRegExp, reportRegExp]
+
+  isValid = regExpArray.map((regExp) => {
+    return regExp.test(commandString)
+  }).includes(true)
+
+  return isValid
+}
